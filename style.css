@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* Principal Colors */
+    --green: #74B652;
+    --lightgreen: #94C773;
+
+    --purple: #653496;
+    --lightpurple: #7B52AE;
+
+    /* Background Color */
+    --darkpurple: #10021e;
+    --darkpurpletwo: #0A050F;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body {
+    background-color: var(--darkpurple);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header h2 {
+    color: var(--green);
+    font-weight: 400;
+    font-size: 2.3em;
+}
+
+header h2::first-letter {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4.5em;
+}
+
+ul li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--green);
+    font-size: 1.4rem;
+    transition: 0.2s ease-out;
+}
+
+ul li a:hover {
+    color: #c4ebb1;
+    text-shadow:
+    0 0 5px var(--lightgreen),
+    0 0 10px var(--lightgreen),
+    0 0 20px var(--lightgreen),
+    0 0 30px var(--green),
+    0 0 40px var(--green),
+    0 0 50px var(--green),
+    0 0 60px var(--green);
+}
+
+.nav-button button {
+    outline: none;
+    padding: 15px 50px;
+    border: none;
+    border: 2px solid var(--green);
+    background: none;
+    border-radius: 1.4rem;
+}
+
+.nav-button button a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--green);
+}
