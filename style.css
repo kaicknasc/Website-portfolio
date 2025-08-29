@@ -22,10 +22,11 @@
     font-family: Poppins, sans-serif;
 }
 
-body {
+html, body {
     color: var(--white);
     min-height: 100vh;
     background-color: var(--darkpurple);
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -59,6 +60,7 @@ header {
     background: #0a050f34;
     z-index: 100;
     backdrop-filter: blur(5px);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.326);
 }
 
 header h2 {
@@ -145,38 +147,42 @@ section {
 .home-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .home-content h1 {
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: 700;
     margin-top: 1.5rem;
     line-height: 1;
 }
 
 .home-content h3 {
-    font-size: 4rem;
+    font-size: 2.9rem;
     margin: 1rem 0;
 }
 
 .home-content p {
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.8;
 }
 
 .home-image img {
     width: 32vw;
+    border-radius: 50%;
 
-    box-shadow: 0 0 25px var(--green);
+    box-shadow: 0 0 25px var(--green),
+                0 0 50px var(--green),
+                0 0 100px var(--green);
+
 }
 
 .social-icons a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 1rem;
     background: transparent;
     border: 2px solid var(--green);
@@ -201,11 +207,11 @@ section {
 
 .btn {
     display: inline-block;
-    padding: 0.5rem 2rem;
+    padding: 1rem 2rem;
     background-color: var(--green);
     box-shadow:  0 0 25px var(--green);
     border-radius: 3rem;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: black;
     border: 2px solid transparent;
     font-weight: 600;
@@ -268,7 +274,7 @@ section {
 
 .heading {
     text-align: center;
-    font-size: 4.2rem;
+    font-size: 3.2rem;
     margin: 5rem 0;
 }
 
