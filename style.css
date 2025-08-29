@@ -12,14 +12,14 @@
 
     /* Background Color */
     --darkpurple: #10021e;
-    --darkpurpletwo: #0A050F;
+    --darkpurpletwo: #0d0218;
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: poppins;
+    font-family: Poppins, sans-serif;
 }
 
 body {
@@ -28,8 +28,20 @@ body {
     background-color: var(--darkpurple);
 }
 
+::-webkit-scrollbar {
+    width: 16.5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--green);
+}
+
+::-webkit-scrollbar-track {
+    background-color: #06010dc6;
+}
+
 span {
-    color: var(--lightgreen);
+    color: var(--green);
 }
 
 a {
@@ -149,7 +161,7 @@ section {
 }
 
 .home-content p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.8;
 }
@@ -189,7 +201,7 @@ section {
 
 .btn {
     display: inline-block;
-    padding: 1rem 3rem;
+    padding: 0.5rem 2rem;
     background-color: var(--green);
     box-shadow:  0 0 25px var(--green);
     border-radius: 3rem;
@@ -198,6 +210,7 @@ section {
     border: 2px solid transparent;
     font-weight: 600;
     transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -218,3 +231,104 @@ section {
     background-color: var(--green);
     color: var(--darkpurpletwo);
 }
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    background-color: var(--darkpurpletwo);
+}
+
+.about img {
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--green);
+    transition: 0.4s ease-in-out;
+}
+
+.about img:hover {
+    box-shadow: 0 0 25px var(--green),
+                0 0 50px var(--green),
+                0 0 100px var(--green);
+}
+
+.about-content h2 {
+    font-size: 5rem;
+    text-align: left;
+}
+
+.about-content p {
+    font-size: 1.8rem;
+}
+
+.about-content .btn {
+    margin: 3rem 0;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.2rem;
+    margin: 5rem 0;
+}
+
+.services {
+    background-color: var(--darkpurpletwo);
+    color: black;
+}
+
+.services h2 {
+    color: var(--green);
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.services-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green);
+    height: 600px;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: 5px solid transparent;
+    transition: 0.4s ease-in-out;
+}
+
+.services-box:hover {
+    background-color: var(--darkpurple);
+    color: var(--green);
+    border: 5px solid var(--green);
+    transform: scale(1.03);
+}
+
+.services-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.services-info i {
+    font-size: 6.2rem;
+}
+
+.services-info h4 {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    font-weight: 800;
+}
+
+.services-info p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+}
+
