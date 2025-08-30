@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
+    <header>
+        <a href="#" class="logo-header">
+            <div class="logo">Ks</div>
+            <div class="logo-text">Portfolio</div>
+        </a>
+        <nav>
+            <ul id="menu">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Skills</a>
+                </li>
+                <li>
+                    <a href="#">Projects</a>
+                </li>
+                <li>
+                    <a href="#" class="button">Contact Me</a>
+                </li>
+            </ul>
+            <a href="#" class="mobile-toggle" onclick="toggleMobileMenu()">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
+                </svg>
+
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section class="home container">
+            <div class="home-blue">
+                <div>
+                    <h1><small>Hi I'm</small>
+                        Kaick Silva</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat soluta explicabo rem quaerat
+                        eveniet et cupiditate adipisci animi, perspiciatis earum id vero possimus sequi? Odit facilis in
+                        autem cum! Id.</p>
+                </div>
+                <div class="call-to-action">
+                    <a href="#" class="button black">View Resume</a>
+                    <a href="#" class="button white">Contact Me</a>
+                </div>
+                <div class="social-links">
+                   <a href="#"><img src="imgs/github.png" alt="Github Logo" width="48"></i></a>
+                   <a href="#"><img src="imgs/linkedin.png" alt="Github Logo" width="48"></i></a>
+                </div>
+            </div>
+            <div class="home-yellow">
+                <img src="" alt="">
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
+
 </html>
