@@ -357,13 +357,20 @@ h2 {
     }
 }
 
+h3 {
+    font-size: 32px;
+}
+
 .skills {
     .holder-blue {
         background-color: var(--blue-light);
         border-radius: 30px;
         padding: 30px;
-        justify-content: space-around;
         display: flex;
+
+        @media (max-width: 1024px) {
+            flex-direction: column;
+        }
 
         .left-column {
             flex: 1;
@@ -371,7 +378,7 @@ h2 {
             ul {
                 list-style: none;
                 gap: 10px;
-                margin-right: 35%;
+                margin-right: 100px;
                 margin-bottom: 20px;
 
                 li {
@@ -395,18 +402,9 @@ h2 {
 
         .right-column {
             flex: 1;
-        }
-    }
 
-    @media (max-width: 435px) {
-        .holder-blue {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-
-            .left-column {
-                text-align: left;
-                margin: auto;
+            p {
+                margin-bottom: 30px;
             }
         }
     }
@@ -486,56 +484,58 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
-        form {
-            width: 700px;
-            padding: 30px;
-            background-color: rgba(0, 0, 0, 0.05);
-            border-radius: 30px;
-            flex-direction: column;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+
+    form {
+        width: 700px;
+        padding: 30px;
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 30px;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input,
+    textarea {
+        display: flex;
+    }
+
+    input {
+        width: 450px;
+        background-color: rgba(0, 0, 0, 0.15);
+        font-size: 20px;
+        padding: 16px 16px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        border: none;
+
+
+
+        input:focus-within {
+            outline: none;
+            border-color: var(--base-black);
+            border-width: 3px;
         }
+    }
 
-        input, textarea {
-            display: flex;
-        }
-        
-        input {
-            width: 450px;
-            background-color: rgba(0, 0, 0, 0.15);
-            font-size: 20px;
-            padding: 16px 16px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            border: none;
+    textarea {
+        background-color: rgba(0, 0, 0, 0.15);
+        font-size: 20px;
+        padding: 16px 16px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        border: none;
+        width: 450px;
+        resize: none;
+    }
 
-
-
-            input:focus-within {
-                outline: none;
-                border-color: var(--base-black);
-                border-width: 3px;
-            }
-        }
-            textarea {
-                background-color: rgba(0, 0, 0, 0.15);
-                font-size: 20px;
-                padding: 16px 16px;
-                border-radius: 10px;
-                margin-bottom: 15px;
-                border: none;
-                width: 450px;
-                resize: none;
-            }
-
-            textarea:focus-within {
-                outline: none;
-                border-color: var(--base-black);
-                border-width: 3px;
-                background-color: var(white);
-            }
+    textarea:focus-within {
+        outline: none;
+        border-color: var(--base-black);
+        border-width: 3px;
+        background-color: var(white);
+    }
 
     button {
         background-color: var(--blue);
@@ -557,10 +557,13 @@ h2 {
     }
 
     @media (max-width: 768px) {
-        form, input, textarea {
+
+        form,
+        input,
+        textarea {
             width: 80%;
         }
-        
+
     }
 }
 
@@ -569,6 +572,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+
     ul {
         list-style: none;
         gap: 25px;
@@ -576,9 +580,9 @@ h2 {
         text-align: center;
 
         li {
-           display: inline-block; 
+            display: inline-block;
 
-           transition: 0.3s ease;
+            transition: 0.3s ease;
 
             &:hover {
                 transform: scale(1.1);
@@ -588,5 +592,5 @@ h2 {
         a {
             font-size: 30px;
         }
-    }    
+    }
 }
