@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -47,17 +45,19 @@
                 <div>
                     <h1><small>Hi I'm</small>
                         Kaick Silva</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat soluta explicabo rem quaerat
-                        eveniet et cupiditate adipisci animi, perspiciatis earum id vero possimus sequi? Odit facilis in
-                        autem cum! Id.</p>
+                    <p>I'm a web developer and graphic designer, combining creativity and technique to create modern,
+                        functional, and visually appealing websites. My goal is to transform ideas into digital
+                        experiences that connect brands and people.</p>
                 </div>
                 <div class="call-to-action">
                     <a href="docs/Curriculo.pdf" class="button black">View Resume</a>
                     <a href="mailto:kaicknasccontato@gmail.com" class="button white">Contact Me</a>
                 </div>
                 <div class="social-links">
-                    <a href="https://github.com/kaicknasc"><img src="imgs/github.png" alt="Github Logo" width="48"></i></a>
-                    <a href="https://www.linkedin.com/in/kaicknasc/"><img src="imgs/linkedin.png" alt="Github Logo" width="48"></i></a>
+                    <a href="https://github.com/kaicknasc"><img src="imgs/github.png" alt="Github Logo"
+                            width="48"></i></a>
+                    <a href="https://www.linkedin.com/in/kaicknasc/"><img src="imgs/linkedin.png" alt="Github Logo"
+                            width="48"></i></a>
                 </div>
             </div>
             <div class="home-yellow">
@@ -93,6 +93,7 @@
                         <li>Next JS</li>
                         <li>Bootstrap</li>
                     </ul>
+
                     <h3>Backend</h3>
                     <ul>
                         <li>PHP</li>
@@ -103,10 +104,12 @@
 
                 <div class="right-column">
                     <h3>A bit about me</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit veritatis, temporibus voluptas et
-                        iusto quaerat.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, magni nulla. Delectus modi
-                        assumenda nesciunt?</p>
+                    <br>
+                    <p>I'm Kaick, a web developer and graphic designer. I create modern, responsive, and functional web
+                        pages, <strong>always focusing on the best user experience.</strong></p>
+                    <p>I also work on creating visual identities and layouts that combine aesthetics and clarity. I seek
+                        creative and efficient solutions, <strong>delivering results that connect brands and
+                            people.</strong></p>
                 </div>
             </div>
         </section>
@@ -115,25 +118,50 @@
             <h2><small>Recent</small>
                 Projects</h2>
 
-                <div class="project-box">
-                    <div class="project-content">
-                        <div class="project-image">
-                            <img src="imgs/image-projects/Calculator.png" alt="Calculator">
-                        </div>
+            <div class="project-box">
+                <div class="project-content">
+                    <div class="project-image">
+                        <img src="imgs/image-projects/Calculator.png" alt="Calculator">
+                    </div>
 
-                        <div class="project-info">
-                            <h4>Calculator project</h4>
-                            <p>A calculator project developed by me, which can solve calculations quickly and intelligently.</p>
-                        </div>
+                    <div class="project-info">
+                        <h4>Calculator project</h4>
+                        <p>A calculator project developed by me, which can solve calculations quickly and intelligently.
+                        </p>
+                    </div>
 
-                        <div class="buttons">
+                    <div class="buttons">
                         <a href="#" class="button">View Code</a>
                         <a href="#" class="button white">Project</a>
-                        </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact container">
+            <h2><small>Hi!</small> Contact Me</h2>
+
+            <form action="https://formspree.io/f/xpwjllzw" method="post">
+                <input type="text" name="first" placeholder="First Name" autocomplete="off" required>
+                <input type="text" name="last" placeholder="Last Name" autocomplete="off" required>
+                <input type="email" name="email" placeholder="Email Adress" autocomplete="off" required>
+                <textarea rows="5" cols="60" name="message" placeholder="Enter text" autocomplete="off" id=""
+                    required></textarea>
+                <button type="submit" class="submit">Send Message</button>
+            </form>
         </section>
     </main>
+
+    <footer class="footer container">
+        <div class="social-icons-footer">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 
