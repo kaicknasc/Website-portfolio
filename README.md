@@ -25,7 +25,7 @@ Projects section with links to repositories/demos
 
 Direct contact (LinkedIn / Email)
 
-📬 <a href="wa.me/11940275873">Contact</a>
+📬 <a href="instagram.com/kaicknasc">Contact</a>
 
 💼 <a href="www.linkedin.com/in/kaicknasc/">LinkedIn</a>
 
