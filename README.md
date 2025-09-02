@@ -4,15 +4,11 @@ This is my personal portfolio, developed to showcase my projects, experiences, a
 
  ## 🚀 Technologies Used
 
-HTML5
+- HTML5
 
-CSS3
+- CSS3
 
-JavaScript
-
-React (if applicable)
-
-[Add others if needed]
+- JavaScript
 
  ## 📸 Demo
 <p><a href="https://kaicknasc.github.io/Website-portfolio/">My Portfolio</a> 👈🏾</p>
@@ -25,7 +21,7 @@ Projects section with links to repositories/demos
 
 Direct contact (LinkedIn / Email)
 
-📬 <a href="instagram.com/kaicknasc">Contact</a>
+📬 [Contact](wa.me/11940275873)
 
 💼 <a href="www.linkedin.com/in/kaicknasc/">LinkedIn</a>
 
